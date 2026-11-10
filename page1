@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fitness & Sports - Smart Watch Ultra Nano 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes pulse-ring {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.05); opacity: 0.4; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .animate-pulse-ring { animation: pulse-ring 3s ease-in-out infinite; }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fade-in-up 0.6s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans">
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
+        Smart Watch Ultra Nano 3
+      </h1>
+      <nav class="flex space-x-6 text-sm font-medium">
+        <a href="product.html" class="text-slate-400 hover:text-orange-400 transition">Home</a>
+        <a href="fitness.html" class="text-orange-400 border-b-2 border-orange-400 pb-1">Fitness & Sports</a>
+        <a href="connectivity.html" class="text-slate-400 hover:text-orange-400 transition">Connectivity</a>
+        <a href="health.html" class="text-slate-400 hover:text-orange-400 transition">Health & SOS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Fitness Page Content -->
+  <main class="max-w-5xl mx-auto px-4 py-12 animate-fade-in">
+    <div class="text-center mb-12">
+      <span class="text-orange-400 text-sm font-semibold tracking-wider uppercase">Category 01</span>
+      <h2 class="text-4xl font-extrabold mt-2 mb-4">Fitness & Extreme Sports</h2>
+      <p class="text-slate-400 max-w-xl mx-auto">Built for endurance athletes, ocean divers, and outdoor explorers.</p>
+    </div>
+
+    <!-- Feature Grid -->
+    <div class="grid md:grid-cols-2 gap-8 mb-12">
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-orange-500/50 transition">
+        <div>
+          <div class="text-3xl mb-3">🏊‍♂️</div>
+          <h3 class="text-xl font-bold mb-2">100m Water Resistance & Oceanic Dive</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            High-precision depth gauge with sea water temperature sensor. Dive deep into underwater adventures with full display visibility under water.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800 flex justify-between text-xs text-slate-500">
+          <span>EN13319 Certified</span>
+          <span class="text-orange-400">Real-time depth gauge</span>
+        </div>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:border-orange-500/50 transition">
+        <div>
+          <div class="text-3xl mb-3">🏃‍♀️</div>
+          <h3 class="text-xl font-bold mb-2">100+ Workout Modes</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            From trail running and mountain climbing to HIIT workouts. Tracks cadence, stride length, vertical oscillation, and heart rate zones.
+          </p>
+        </div>
+        <div class="mt-6 pt-4 border-t border-slate-800 flex justify-between text-xs text-slate-500">
+          <span>Auto Workout Detection</span>
+          <span class="text-orange-400">VO2 Max Tracking</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Interactive Heart Rate Visualizer -->
+    <div class="bg-gradient-to-r from-orange-950/40 to-slate-900 border border-orange-500/30 rounded-2xl p-8 text-center relative overflow-hidden mb-12">
+      <div class="w-32 h-32 rounded-full border-4 border-orange-500/40 mx-auto flex items-center justify-center mb-4 animate-pulse-ring">
+        <div class="text-center">
+          <div class="text-3xl font-black text-orange-400">142</div>
+          <div class="text-xs text-slate-400 uppercase tracking-widest">BPM Zone 4</div>
+        </div>
+      </div>
+      <h3 class="text-lg font-bold">Peak Performance Zone</h3>
+      <p class="text-slate-400 text-sm max-w-md mx-auto mt-1">Real-time dynamic heart rate tracking during intense physical exertion.</p>
+    </div>
+
+    <div class="text-center">
+      <a href="product.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-slate-950 font-bold px-8 py-3 rounded-full transition shadow-lg shadow-orange-500/20">
+        Back to Product Page
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
+    Smart Watch Ultra Nano 3 &copy; 2026. All rights reserved.
+  </footer>
+</body>
+</html>
