@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Connectivity & Calls - Smart Watch Ultra Nano 3</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes signal-wave {
+      0% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.1); }
+      100% { opacity: 0.2; transform: scale(0.8); }
+    }
+    .animate-wave { animation: signal-wave 2s infinite ease-in-out; }
+    @keyframes fade-in-up {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in { animation: fade-in-up 0.6s ease-out forwards; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans">
+  <!-- Navigation Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-md bg-slate-900/80 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <h1 class="text-xl font-bold bg-gradient-to-r from-orange-400 to-amber-200 bg-clip-text text-transparent">
+        Smart Watch Ultra Nano 3
+      </h1>
+      <nav class="flex space-x-6 text-sm font-medium">
+        <a href="product.html" class="text-slate-400 hover:text-orange-400 transition">Home</a>
+        <a href="fitness.html" class="text-slate-400 hover:text-orange-400 transition">Fitness & Sports</a>
+        <a href="connectivity.html" class="text-orange-400 border-b-2 border-orange-400 pb-1">Connectivity</a>
+        <a href="health.html" class="text-slate-400 hover:text-orange-400 transition">Health & SOS</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Connectivity Page Content -->
+  <main class="max-w-5xl mx-auto px-4 py-12 animate-fade-in">
+    <div class="text-center mb-12">
+      <span class="text-cyan-400 text-sm font-semibold tracking-wider uppercase">Category 02</span>
+      <h2 class="text-4xl font-extrabold mt-2 mb-4">Satellite & Voice Connectivity</h2>
+      <p class="text-slate-400 max-w-xl mx-auto">Stay connected anywhere on Earth—even without mobile coverage.</p>
+    </div>
+
+    <!-- Feature Showcase -->
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 text-center hover:border-cyan-500/50 transition">
+        <div class="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-4 animate-wave text-cyan-400 text-2xl">
+          📡
+        </div>
+        <h3 class="font-bold text-lg mb-2">Satellite Connection</h3>
+        <p class="text-slate-400 text-sm">Direct-to-satellite messaging and emergency locator when off the grid.</p>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 text-center hover:border-cyan-500/50 transition">
+        <div class="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-4 text-cyan-400 text-2xl">
+          🤖
+        </div>
+        <h3 class="font-bold text-lg mb-2">AI Voice Assistant</h3>
+        <p class="text-slate-400 text-sm">Control functions hands-free, send replies, set alarms, and query details instantly.</p>
+      </div>
+
+      <div class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 text-center hover:border-cyan-500/50 transition">
+        <div class="w-16 h-16 bg-cyan-500/10 rounded-full flex items-center justify-center mx-auto mb-4 text-cyan-400 text-2xl">
+          📞
+        </div>
+        <h3 class="font-bold text-lg mb-2">HD Calls & Messaging</h3>
+        <p class="text-slate-400 text-sm">Dual-microphone noise cancellation ensures crisp audio even in windy environments.</p>
+      </div>
+    </div>
+
+    <!-- Interactive Call Simulation UI -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 max-w-md mx-auto text-center shadow-xl">
+      <div class="inline-block px-3 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded-full mb-4">Connected to Satellite</div>
+      <div class="w-20 h-20 rounded-full bg-slate-800 border-2 border-cyan-400 mx-auto flex items-center justify-center text-3xl mb-3">
+        👤
+      </div>
+      <h4 class="font-bold text-lg">HD Voice Call Active</h4>
+      <p class="text-slate-400 text-xs mb-6">00:04:12 • Ultra Clear Noise Isolation</p>
+      <div class="flex justify-center space-x-4">
+        <button class="bg-red-500/20 text-red-400 hover:bg-red-500 hover:text-white px-5 py-2 rounded-full text-sm font-semibold transition">
+          End Call
+        </button>
+        <button class="bg-slate-800 text-slate-200 hover:bg-slate-700 px-5 py-2 rounded-full text-sm font-semibold transition">
+          Mute Mic
+        </button>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="product.html" class="inline-block bg-cyan-500 hover:bg-cyan-600 text-slate-950 font-bold px-8 py-3 rounded-full transition shadow-lg shadow-cyan-500/20">
+        Back to Product Page
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 py-6 text-center text-slate-500 text-sm">
+    Smart Watch Ultra Nano 3 &copy; 2026. All rights reserved.
+  </footer>
+</body>
+</html>
